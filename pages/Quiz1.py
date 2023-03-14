@@ -8,8 +8,8 @@ def orig(picture):
     height, width = picture.shape[:2]
 
     plt.axis('off')
-    plt.imshow(picture)
-    st.pyplot(plt)
+    plt.imshow(image)
+    st.image(translated_img)
 
 
 def translation_1(picture, bx, by, tx, ty):
@@ -26,7 +26,7 @@ def translation_1(picture, bx, by, tx, ty):
 
         plt.axis('off')
         plt.imshow(translated_img_)
-        st.pyplot(plt)
+        st.image(translated_img)
 
 def main():
     uploaded_file = st.file_uploader("Choose an image file", type=["jpg", "jpeg", "png"])
