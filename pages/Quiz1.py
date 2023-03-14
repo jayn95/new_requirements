@@ -25,8 +25,8 @@ def translation_1(picture, bx, by, tx, ty):
     translated_img_ = cv2.warpAffine(picture, m_translation_, dsize=(width,height))
 
         #plt.axis('off')
-        plt.imshow(translated_img_)
-        st.image(translated_img)
+    plt.imshow(translated_img_)
+    st.image(translated_img)
 
 def main():
     uploaded_file = st.file_uploader("Choose an image file", type=["jpg", "jpeg", "png"])
