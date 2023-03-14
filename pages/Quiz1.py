@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 def orig(picture):
     height, width = picture.shape[:2]
 
-    plt.axis('off')
+    #plt.axis('off')
     plt.imshow(image)
     st.image(translated_img)
 
@@ -24,7 +24,7 @@ def translation_1(picture, bx, by, tx, ty):
                                  [0,1,ny]])
     translated_img_ = cv2.warpAffine(picture, m_translation_, dsize=(width,height))
 
-        plt.axis('off')
+        #plt.axis('off')
         plt.imshow(translated_img_)
         st.image(translated_img)
 
